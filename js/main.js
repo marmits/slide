@@ -4,7 +4,7 @@ let Slide = function(){
     this.gotopageButtons = document.querySelectorAll('.navigation ul li');
     this.nbElements = this.elems.length;
 
-    this.setElementVisibility = function(element,visible) {
+    this.setElementVisibility = function(element,visible){
 
         if(typeof visible === "boolean" && element instanceof HTMLElement) {
             if(visible === true) {
@@ -22,7 +22,7 @@ let Slide = function(){
     this.bindButton = function(Elements, compteur){
 
         let that = this;    
-        that.gotopageButtons.forEach(function(button) {
+        that.gotopageButtons.forEach(function(button){
             button.addEventListener('click', function(){
                 if((button.getAttribute("class") === "prev") && (compteur !== 0)){
                     compteur--;
@@ -35,8 +35,7 @@ let Slide = function(){
         });
     };
 
-    this.display = function(element)
-    {
+    this.display = function(element){
 
         let that = this;	
         that.setElementVisibility(that.gotopageButtons[0], true);
@@ -54,11 +53,10 @@ let Slide = function(){
         }
     };
 
-    this.init = function(depart)
-    {
+    this.init = function(depart){
 
         let that = this;
-        switch(depart) {
+        switch(depart){
             case depart === undefined :
                 depart = 0;
             break;
@@ -67,7 +65,7 @@ let Slide = function(){
             break;
             default :
                 if (isNaN(depart)){
-                depart = 0;
+                    depart = 0;
                 }
             break;
         }
