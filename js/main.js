@@ -1,9 +1,10 @@
 let Slide = function(){
-	this.elems = document.querySelectorAll('#main div');
-	this.gotopageButtons = document.querySelectorAll('.navigation ul li');
-	this.nbElements = this.elems.length;
 
-	this.setElementVisibility = function(element,visible) {
+    this.elems = document.querySelectorAll('#main div');
+    this.gotopageButtons = document.querySelectorAll('.navigation ul li');
+    this.nbElements = this.elems.length;
+
+    this.setElementVisibility = function(element,visible) {
 
         if(typeof visible === "boolean" && element instanceof HTMLElement) {
             if(visible === true) {
