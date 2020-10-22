@@ -5,7 +5,6 @@ let Slide = function(){
     this.nbElements = this.elems.length;
 
     this.setElementVisibility = function(element,visible){
-
         if(typeof visible === "boolean" && element instanceof HTMLElement) {
             if(visible === true) {
                 if (element.classList.contains("hidden")) {
@@ -20,7 +19,6 @@ let Slide = function(){
     };
 
     this.bindButton = function(Elements, compteur){
-
         let that = this;    
         that.gotopageButtons.forEach(function(button){
             button.addEventListener('click', function(){
@@ -36,7 +34,6 @@ let Slide = function(){
     };
 
     this.display = function(element){
-
         let that = this;	
         that.setElementVisibility(that.gotopageButtons[0], true);
         that.setElementVisibility(that.gotopageButtons[1], true);	
@@ -54,7 +51,6 @@ let Slide = function(){
     };
 
     this.init = function(depart){
-
         let that = this;
         switch(depart){
             case depart === undefined :
