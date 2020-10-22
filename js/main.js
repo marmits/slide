@@ -54,7 +54,7 @@ let Slide = function(){
         }
     };
 
-	this.init = function(depart)
+    this.init = function(depart)
     {
 
     let that = this;
