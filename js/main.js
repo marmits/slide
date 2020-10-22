@@ -57,22 +57,22 @@ let Slide = function(){
     this.init = function(depart)
     {
 
-    let that = this;
-    switch(depart) {
-        case depart === undefined :
-            depart = 0;
-        break;
-        case depart > that.nbElements : 
-            depart = that.nbElements - 1;
-        break;
-        default :
-            if (isNaN(depart)){
-            depart = 0;
-            }
-        break;
-    }
-    that.display(depart);
-    that.bindButton(that.elems, depart);
+        let that = this;
+        switch(depart) {
+            case depart === undefined :
+                depart = 0;
+            break;
+            case depart > that.nbElements : 
+                depart = that.nbElements - 1;
+            break;
+            default :
+                if (isNaN(depart)){
+                depart = 0;
+                }
+            break;
+        }
+        that.display(depart);
+        that.bindButton(that.elems, depart);
     };
 };
 
