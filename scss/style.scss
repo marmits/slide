@@ -3,9 +3,7 @@ body {
   font-color:#FFF;
   background-color: #000;
 }
-
 div#main{
-
   position:relative;
   text-align: center;  
   width:calc(100% - 10em);
@@ -13,13 +11,10 @@ div#main{
 }
 div.rect{
   position:relative;
-
-  
   width:50%;
   height:200px;
   background-color: grey;
   margin: 0 auto;
-  
   &:nth-child(1){
     background-color: #CCC;
   }
@@ -36,7 +31,6 @@ div.rect{
     display:none;
   }
 }
-
 div.navigation{
   width:75%;
   margin:0 auto;
